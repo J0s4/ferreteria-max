@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ferretería Max | Todo para construir, reparar y pintar</title>
+  <meta name="description" content="Ferretería en Costa Rica: tornillos, clavos, pinturas, herramientas, madera y más. Pague por SINPE Móvil y retire en sucursal.">
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/estilos.css">
+  <link rel="stylesheet" href="/tema.css">
+  <script src="/js/comun.js" defer></script>
+  <script src="/js/inicio.js" defer></script>
+</head>
+<body>
+  <div id="encabezado"></div>
+
+  <main id="contenido">
+    <section class="portada" aria-label="Novedades">
+      <div class="contenedor portada-interior">
+        <div class="portada-texto">
+          <h1 id="banner-titulo">Todo para construir, reparar y pintar</h1>
+          <p id="banner-texto">Pague por SINPE Móvil y retire en la sucursal que le quede más cerca.</p>
+          <a class="boton" id="banner-boton" href="/catalogo">Ver el catálogo</a>
+          <div class="controles-banner" id="banner-controles"></div>
+        </div>
+        <div class="portada-imagen" id="banner-imagen" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor">
+        <div class="cabecera-seccion">
+          <div><h2>Busque por categoría</h2><p>Lo que necesita para la obra, el taller o la casa.</p></div>
+          <a class="enlace" href="/catalogo">Ver todo el catálogo</a>
+        </div>
+        <div class="gavetas" id="categorias"><p class="cargando">Cargando categorías…</p></div>
+      </div>
+    </section>
+
+    <section class="seccion seccion-blanca" id="bloque-ofertas">
+      <div class="contenedor">
+        <div class="cabecera-seccion">
+          <div><h2>Ofertas</h2><p>Precios rebajados mientras haya inventario.</p></div>
+          <a class="enlace" href="/catalogo?ofertas=1">Ver todas las ofertas</a>
+        </div>
+        <div class="rejilla-productos" id="ofertas"></div>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor">
+        <div class="cabecera-seccion">
+          <div><h2>Lo más pedido</h2><p>Los productos que más se llevan nuestros clientes.</p></div>
+        </div>
+        <div class="rejilla-productos" id="destacados"></div>
+      </div>
+    </section>
+
+    <section class="seccion seccion-blanca">
+      <div class="contenedor">
+        <div class="cabecera-seccion"><div><h2>Cómo comprar en línea</h2></div></div>
+        <ol class="pasos">
+          <li><h3>Arme su pedido</h3><p>Agregue productos al carrito y elija la sucursal donde lo va a retirar.</p></li>
+          <li><h3>Pague por SINPE Móvil</h3><p>Le damos el número, el monto y el código del pedido para el detalle.</p></li>
+          <li><h3>Retire en sucursal</h3><p>Cuando verifiquemos el pago, su pedido queda listo. Revise el estado en su cuenta.</p></li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <div id="pie"></div>
+</body>
+</html>

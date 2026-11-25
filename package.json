@@ -1,0 +1,22 @@
+{
+  "name": "ferreteria-max",
+  "version": "1.0.0",
+  "description": "Sitio web de Ferretería Max (Costa Rica): catálogo, pedidos con SINPE Móvil y paneles de administración. Corre local (SQLite) o en Vercel (Turso).",
+  "main": "servidor.js",
+  "private": true,
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning servidor.js",
+    "dev": "node --disable-warning=ExperimentalWarning --watch servidor.js",
+    "reiniciar": "node --disable-warning=ExperimentalWarning src/reiniciar.js",
+    "imagenes": "node src/generar-imagenes.js"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.18.0",
+    "bcryptjs": "^3.0.3",
+    "express": "^5.1.0",
+    "multer": "^2.0.2"
+  }
+}

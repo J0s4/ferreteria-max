@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crear cuenta | Ferretería Max</title>
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/estilos.css">
+  <link rel="stylesheet" href="/tema.css">
+  <script src="/js/comun.js" defer></script>
+  <script src="/js/acceso.js" defer></script>
+</head>
+<body>
+  <div id="encabezado"></div>
+  <main id="contenido">
+    <div class="contenedor">
+      <section class="panel formulario-centrado">
+        <h1>Crear cuenta</h1>
+        <p class="texto-suave">Solo toma un minuto. Usamos su teléfono para avisarle si hay algún problema con su pedido.</p>
+        <div id="mensaje" class="oculto" role="alert"></div>
+        <form id="form-registro" novalidate>
+          <div class="campo"><label for="nombre">Nombre completo</label><input type="text" id="nombre" name="nombre" autocomplete="name" required maxlength="80"></div>
+          <div class="campo"><label for="correo">Correo</label><input type="email" id="correo" name="correo" autocomplete="email" required></div>
+          <div class="campo"><label for="telefono">Teléfono</label><input type="tel" id="telefono" name="telefono" autocomplete="tel" required placeholder="8888-1234"></div>
+          <div class="campo">
+            <label for="contrasena">Contraseña</label>
+            <input type="password" id="contrasena" name="contrasena" autocomplete="new-password" required minlength="8">
+            <span class="ayuda">Mínimo 8 caracteres, con letras y números.</span>
+          </div>
+          <div class="campo"><label for="confirmar">Repita la contraseña</label><input type="password" id="confirmar" name="confirmar" autocomplete="new-password" required></div>
+          <button class="boton boton-ancho" type="submit">Crear cuenta</button>
+        </form>
+        <p style="margin-top:1.25rem">¿Ya tiene cuenta? <a class="enlace" id="enlace-login" href="/login">Ingrese aquí</a></p>
+      </section>
+    </div>
+  </main>
+  <div id="pie"></div>
+</body>
+</html>

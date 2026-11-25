@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Panel de administración | Ferretería Max</title>
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/estilos.css">
+  <link rel="stylesheet" href="/tema.css">
+  <link rel="stylesheet" href="/css/admin.css">
+  <script src="/js/comun.js" defer></script>
+  <script src="/admin/admin.js" defer></script>
+</head>
+<body class="panel-admin">
+  <a class="saltar" href="#contenido-admin">Saltar al contenido</a>
+  <header class="barra-admin">
+    <div class="fila">
+      <button class="boton-icono boton-menu-admin" type="button" id="boton-menu-admin" aria-expanded="false" aria-controls="menu-admin" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <a class="marca" href="/admin">
+        <img src="/img/logo.svg" alt="" id="logo-admin">
+        <span><span id="nombre-tienda-admin">Ferretería Max</span><small>Panel de administración</small></span>
+      </a>
+      <div class="usuario-admin">
+        <span class="nombre-admin" id="nombre-admin"></span>
+        <span class="chip-rol" id="rol-admin"></span>
+        <a class="boton-icono" href="/" target="_blank" rel="noopener" aria-label="Ver sitio (se abre en otra pestaña)"><span class="texto-boton-barra">Ver sitio</span><span aria-hidden="true" class="solo-movil">↗</span></a>
+        <a class="boton-icono" href="/cuenta#perfil" aria-label="Mi cuenta"><span class="texto-boton-barra">Mi cuenta</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></a>
+        <button class="boton-icono" type="button" id="salir">Salir</button>
+      </div>
+    </div>
+  </header>
+  <div class="estado-sitio" id="estado-sitio"></div>
+
+  <div class="marco-admin">
+    <nav class="menu-admin" id="menu-admin" aria-label="Secciones del panel"></nav>
+    <main class="contenido-admin" id="contenido-admin" tabindex="-1">
+      <p class="cargando">Cargando panel…</p>
+    </main>
+  </div>
+</body>
+</html>

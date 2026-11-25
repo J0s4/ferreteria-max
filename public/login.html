@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ingresar | Ferretería Max</title>
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/estilos.css">
+  <link rel="stylesheet" href="/tema.css">
+  <script src="/js/comun.js" defer></script>
+  <script src="/js/acceso.js" defer></script>
+</head>
+<body>
+  <div id="encabezado"></div>
+  <main id="contenido">
+    <div class="contenedor">
+      <section class="panel formulario-centrado">
+        <h1>Ingresar</h1>
+        <p class="texto-suave">Con su cuenta puede hacer pedidos y revisar el estado de sus pagos.</p>
+        <div id="mensaje" class="oculto" role="alert"></div>
+        <form id="form-login" novalidate>
+          <div class="campo"><label for="correo">Correo</label><input type="email" id="correo" name="correo" autocomplete="email" required></div>
+          <div class="campo"><label for="contrasena">Contraseña</label><input type="password" id="contrasena" name="contrasena" autocomplete="current-password" required></div>
+          <button class="boton boton-ancho" type="submit">Ingresar</button>
+        </form>
+        <p style="margin-top:1.25rem">¿Primera vez? <a class="enlace" id="enlace-registro" href="/registro">Cree su cuenta</a></p>
+        <p class="texto-suave" style="font-size:.95rem">Su sesión queda abierta en este dispositivo hasta que la cierre.</p>
+      </section>
+    </div>
+  </main>
+  <div id="pie"></div>
+</body>
+</html>

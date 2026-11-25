@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs><pattern id="p" width="36" height="36" patternUnits="userSpaceOnUse"><circle cx="18" cy="18" r="4.5" fill="#000" fill-opacity="0.12"/></pattern></defs>
+  <rect width="800" height="600" fill="#E9EBEE"/><rect width="800" height="600" fill="url(#p)"/>
+  <polygon points="400,190 487,240 487,340 400,390 313,340 313,240" fill="#C9CDD2"/>
+  <circle cx="400" cy="290" r="45" fill="#E9EBEE"/>
+</svg>

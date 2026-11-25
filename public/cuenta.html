@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi cuenta | Ferretería Max</title>
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/estilos.css">
+  <link rel="stylesheet" href="/tema.css">
+  <script src="/js/comun.js" defer></script>
+  <script src="/js/cuenta.js" defer></script>
+</head>
+<body>
+  <div id="encabezado"></div>
+  <main id="contenido">
+    <div class="titulo-pagina">
+      <div class="contenedor cabecera-seccion" style="margin:0">
+        <div><h1 id="saludo">Mi cuenta</h1><p id="correo-usuario"></p></div>
+        <button class="boton boton-borde" type="button" id="cerrar-sesion" style="color:inherit;border-color:currentColor">Cerrar sesión</button>
+      </div>
+    </div>
+    <div class="contenedor seccion">
+      <div class="pestanas" role="tablist">
+        <button role="tab" type="button" id="tab-pedidos" aria-controls="panel-pedidos" aria-selected="true">Mis pedidos</button>
+        <button role="tab" type="button" id="tab-perfil" aria-controls="panel-perfil" aria-selected="false">Mi perfil</button>
+        <button role="tab" type="button" id="tab-clave" aria-controls="panel-clave" aria-selected="false">Contraseña</button>
+      </div>
+
+      <section role="tabpanel" id="panel-pedidos" aria-labelledby="tab-pedidos">
+        <div class="lista-pedidos" id="lista-pedidos"><p class="cargando">Cargando pedidos…</p></div>
+      </section>
+
+      <section role="tabpanel" id="panel-perfil" aria-labelledby="tab-perfil" class="oculto">
+        <form class="panel" id="form-perfil" novalidate style="max-width:640px">
+          <div id="mensaje-perfil" class="oculto" role="alert"></div>
+          <div class="campo"><label for="nombre">Nombre completo</label><input type="text" id="nombre" name="nombre" required maxlength="80" autocomplete="name"></div>
+          <div class="fila-campos">
+            <div class="campo"><label for="correo">Correo</label><input type="email" id="correo" name="correo" required autocomplete="email"></div>
+            <div class="campo"><label for="telefono">Teléfono</label><input type="tel" id="telefono" name="telefono" autocomplete="tel"></div>
+          </div>
+          <div class="campo"><label for="direccion">Dirección (opcional)</label><textarea id="direccion" name="direccion" maxlength="250" style="min-height:80px" placeholder="Provincia, cantón, distrito y señas"></textarea></div>
+          <button class="boton" type="submit">Guardar cambios</button>
+        </form>
+      </section>
+
+      <section role="tabpanel" id="panel-clave" aria-labelledby="tab-clave" class="oculto">
+        <form class="panel" id="form-clave" novalidate style="max-width:480px">
+          <div id="mensaje-clave" class="oculto" role="alert"></div>
+          <div class="campo"><label for="actual">Contraseña actual</label><input type="password" id="actual" name="actual" required autocomplete="current-password"></div>
+          <div class="campo"><label for="nueva">Contraseña nueva</label><input type="password" id="nueva" name="nueva" required autocomplete="new-password"><span class="ayuda">Mínimo 8 caracteres, con letras y números.</span></div>
+          <div class="campo"><label for="repetir">Repita la contraseña nueva</label><input type="password" id="repetir" name="repetir" required autocomplete="new-password"></div>
+          <button class="boton" type="submit">Cambiar contraseña</button>
+        </form>
+      </section>
+    </div>
+  </main>
+  <div id="pie"></div>
+</body>
+</html>
